@@ -1,0 +1,24 @@
+projects_index:
+    path:     /
+    defaults: { _controller: "ProjectBundle:Project:index" }
+    methods:  GET
+
+projects_show:
+    path:     /{id}/show
+    defaults: { _controller: "ProjectBundle:Project:show" }
+    methods:  GET
+
+projects_new:
+    path:     /new
+    defaults: { _controller: "ProjectBundle:Project:new" }
+    methods:  [GET, POST]
+
+projects_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ProjectBundle:Project:edit" }
+    methods:  [GET, POST]
+
+projects_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ProjectBundle:Project:delete" }
+    methods:  DELETE

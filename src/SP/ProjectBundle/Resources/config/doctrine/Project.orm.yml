@@ -1,0 +1,26 @@
+SP\ProjectBundle\Entity\Project:
+    type: entity
+    table: null
+    repositoryClass: SP\ProjectBundle\Repository\ProjectRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+        description:
+            type: string
+            length: 255
+        date:
+            type: date
+        username:
+            type: string
+            length: '100'
+        link:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }
